@@ -21,6 +21,11 @@ public class Complex {
         this.imaginary = imaginary;
     }
 
+    public Complex(Complex other) {
+        this.real = other.getReal();
+        this.imaginary = other.getImaginary();
+    }
+
     public Complex setValue(double real, double imaginary) {
         this.real = real;
         this.imaginary = imaginary;
